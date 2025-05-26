@@ -7,7 +7,8 @@ function convert() {
 var kms = document.getElementById('data').value;
 const factor = 0.621371;
 var miles = kms * factor;
-document.getElementById('res').innerText = ` ${miles} miles`;
+// document.getElementById('res').innerText = ` ${miles} miles`;
+document.getElementById('res').innerText = miles + 'Miles'; ;
 }
 
         </script>
@@ -16,7 +17,7 @@ document.getElementById('res').innerText = ` ${miles} miles`;
 <body>
 
     <input type="number" id="data" placeholder="Enter kilometers"> kms
-    <button onclick = convert()>Convert </button> Miles
+    <button onclick = convert()>Convert </button>  Miles
     <h1 id ="res"></h1>
 </body>
 </html>
