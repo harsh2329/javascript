@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Js questions</title>
+        <script type ="text/javascript">
+// ques 1:
+ var num = prompt(" enter a number to check if armtrong or not");
+ var temp = num ;
+ var sum =0;
+ while ( temp > 0 ){
+ var digit = temp % 10;
+ sum = sum + digit**3;
+ console.log(sum);
+ temp = parseInt(temp/10);
+ }
+ if ( sum == num ){
+        alert(num + " is an Armstrong number");
+    } else {
+        alert(num + " is not an Armstrong number"); 
+ }
+
+        </script>
+
+    </head>
+<body></body>
+</html>
