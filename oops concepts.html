@@ -1,0 +1,77 @@
+//OOPS CONCEPT 
+
+encapsulation // in simple words, encapsulation is defined as the process of wrapping data (variables) and code (methods) together as a single unit. 
+
+ class  Person {
+    private String name;
+
+    public String getName(){
+        return name ;
+    }
+
+    public void setName(String newname){
+        name = newname;
+    }
+ }
+
+ inhertance  // in simple words, inheritance is defined as the process by which one class (subclass or child class) can inherit the properties and methods of another class (superclass or parent class).
+
+ class Animal {
+    void eat(){
+        System.out.println("Eating...");
+    }
+
+class Dog Extends Animal {
+    void bark(){
+        System.out.println("Barking...");
+    }}
+ }
+
+
+ polymorphism 
+
+
+ methord overloading compile time polymorphism // methord overloading is a feature that allows a class to have more than one method with the same name, but different parameters (type, number, or both).
+ // in simple words, method overloading is  defined as the ability to create multiple methods with the same name in a class, but with different parameter lists.
+
+ class Math {
+    int add( int a , int b){
+        return a + b;
+    }
+
+    int add(int a , int b , int c ){
+        return a+b+c;
+    }
+ }
+
+
+ methord overridng run time polymorphism // methord overriding is a feature that allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
+ // in simple words, method overriding is defined as the ability of a subclass to provide a specific implementation of a method that is already defined in its superclass.
+
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+
+    void Dog extends Animal {
+        void sound() {
+            System.out.println("Dog barks");
+        }
+    }
+}
+
+
+Abstraction 
+
+// abstraction is a concept in object-oriented programming that allows you to hide the complex implementation details and show only the essential features of an object.
+
+// in simpple words, abstraction is defined as the process of hiding the implementation details and showing only the essential features of an object.
+
+abstract class Shape {
+    abstract void draw(); // abstract method
+}
+class Circle extends Shape {
+    void draw() { // implementation of the abstract method
+        System.out.println("Drawing a circle");
+    }
+}
